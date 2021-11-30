@@ -15,7 +15,7 @@ class ContactApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
        title :'Contact App',
     theme: ThemeData( 
-      primarySwatch: Colors.green,
+      primarySwatch: Colors.blue,
     ),
 home :ContactDetailView(),
 );
