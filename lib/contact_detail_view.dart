@@ -25,13 +25,14 @@ class ContactDetailView extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 60,
+            backgroundImage: NetworkImage('https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80')
           ),
           const SizedBox(
             height: 10,
 
           ),
           Center(
-            child: Text('Joseph Asare', style:TextStyle(fontSize:19,fontWeight: FontWeight.w800, color: Colors.black),
+            child: Text('Pierro MD', style:TextStyle(fontSize:19,fontWeight: FontWeight.w800, color: Colors.black),
         ),
           ),
           Center(
@@ -39,13 +40,14 @@ class ContactDetailView extends StatelessWidget {
         ),
         ),
       Container(
+        color: Colors.blueGrey.withOpacity(0.1),
         child: Column(
           children: [
            
             ListTile(
               title: Text('Mobile', style:TextStyle(fontSize:19,fontWeight: FontWeight.w800, color: Colors.black),
         ),
-        subtitle: Text('+233245313051', style:TextStyle(fontSize:16,fontWeight: FontWeight.w500, color: Colors.grey),
+        subtitle: Text('+233249519393', style:TextStyle(fontSize:16,fontWeight: FontWeight.w500, color: Colors.grey),
         ),
         trailing: Row(mainAxisSize: MainAxisSize.min,
           children: [TextButton(onPressed: (){}, child: const Icon(Icons.message)),
@@ -57,7 +59,7 @@ class ContactDetailView extends StatelessWidget {
            ListTile(
               title: Text('Email', style:TextStyle(fontSize:19,fontWeight: FontWeight.w800, color: Colors.black),
         ),
-        subtitle: Text('joeenocent@gmail.com', style:TextStyle(fontSize:16,fontWeight: FontWeight.w500, color: Colors.grey),
+        subtitle: Text('peterfresh@gmail.com', style:TextStyle(fontSize:16,fontWeight: FontWeight.w500, color: Colors.grey),
         ),
          trailing: Row(mainAxisSize: MainAxisSize.min,
           children: [TextButton(onPressed: (){}, child: const Icon(Icons.email))
@@ -72,30 +74,52 @@ class ContactDetailView extends StatelessWidget {
         subtitle: Text('GAOSA', style:TextStyle(fontSize:16,fontWeight: FontWeight.w500, color: Colors.grey),
             ), 
           ),
-          ListTile(
-            title: Text('Acount Linked', style: TextStyle(fontSize: 19,fontWeight: FontWeight.w800, color: Colors.black),
+          ]
+        ),
+          
+      ),
+      const Card(
+        child: const  ListTile(
+            title: Text('Account Linked', style: TextStyle(fontSize: 19,fontWeight: FontWeight.w800, color: Colors.black),
             ),
            
           ),
+      ),
+            Container(
+              color: Colors.blueGrey.withOpacity(0.1),
+        child: Column(
+          children: [
+           
           ListTile(
             title: Text('Telegram', style: TextStyle(fontSize: 19,fontWeight: FontWeight.w800,color: Colors.black) ,
             ),
              trailing: Row(mainAxisSize: MainAxisSize.min,
-            children: [TextButton(onPressed: (){}, child: const Icon(Icons.email))],
-            ),
+             children:[
+           Image.asset('assets/images/Telegram.png'),
+              ] ),
           ),
           ListTile(
             title: Text('WhatsApp', style: TextStyle(fontSize: 19,fontWeight: FontWeight.w800,color: Colors.black) ,
             ),
              trailing: Row(mainAxisSize: MainAxisSize.min,
-            children: [TextButton(onPressed: (){}, child: const Icon(Icons.email))],
+            children: [Image.asset('assets/images/WhatsApp.png')],
             ),
           ),
-           ListTile(
+          ]
+        ),
+          
+            ),
+           const Card(
+        child: const  ListTile(
             title: Text('More Options', style: TextStyle(fontSize: 19,fontWeight: FontWeight.w800, color: Colors.black),
             ),
-           
+        ),
           ),
+            Container(
+              color: Colors.blueGrey.withOpacity(0.1),
+        child: Column(
+          children: [
+           
            ListTile(
             title: Text('Share Contact', style: TextStyle(fontSize: 19,fontWeight: FontWeight.w800, color: Colors.black),
             ),
